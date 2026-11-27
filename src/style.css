@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* fuentes descargadas */
+@font-face {
+  font-family: kalthorne;
+  src: url(src/assets/fonts/kalthorne.otf);
+}
+
+@font-face {
+  font-family: elektra;
+  src: url(src/assets/fonts/elektra.ttf);
+}
+
+/* activa el modo oscuro cuando exista la clase 'dark' en un ancestro */
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+/* diseño personalizado */
+@theme{
+
+  /* paleta de colores */
+  /*TODO MODIFICAR COLORES*/
+  --color-brand: #059669;         /* Verde esmeralda (puedes usarlo con texto blanco) */
+  --color-brand-dark: #047857;    /* Tono más oscuro para estados hover: */
+  --color-brand-light: #34d399;   /* Tono más claro pensado para destacar en modo oscuro */
+  --color-pink-logo: #F49AC1;
+
+  --color-surface-light: #f8fafc;
+  --color-surface-dark: #0f172a;
+
+
+  /* tipografías */
+  --font-logo: "kalthorne", sans-serif; /* para el logo */
+  --font-display: "elektra", sans-serif;  /* para los textos */
+  --font-sans: "Inter", system-ui, sans-serif; /* fuente de emergencia */
+
+  
+  /* animación flotante para la frase del "logo" */
+  --animate-flotar: flotar 4s ease-in-out infinite;
+
+  @keyframes flotar {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+}

@@ -3,12 +3,12 @@
 /* fuentes descargadas */
 @font-face {
   font-family: kalthorne;
-  src: url(src/assets/fonts/kalthorne.otf);
+  src: url(assets/fonts/kalthorne.otf);
 }
 
 @font-face {
   font-family: elektra;
-  src: url(src/assets/fonts/elektra.ttf);
+  src: url(assets/fonts/elektra.ttf);
 }
 
 /* activa el modo oscuro cuando exista la clase 'dark' en un ancestro */
@@ -34,7 +34,7 @@
   --font-display: "elektra", sans-serif;  /* para los textos */
   --font-sans: "Inter", system-ui, sans-serif; /* fuente de emergencia */
 
-  
+
   /* animación flotante para la frase del "logo" */
   --animate-flotar: flotar 4s ease-in-out infinite;
 

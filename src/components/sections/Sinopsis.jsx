@@ -8,16 +8,17 @@ export default function Sinopsis() {
     <section
         id="sinopsis"
         className="mx-auto max-w-6xl px-4 py-16 text-gray-900 dark:text-gray-100"
-    >
+    >  {/* centrado de caja automático (margin auto), limita el ancho para que no es esitre en monitores grandes, padding horizontal y vertical */}
 
-    <hr className="my-8 border-gray-200 dark:border-gray-800" />
+    {/*my: margin vertical */}
+    <hr className="my-8 border-button-light dark:border-button-dark" />
 
 
     {/* en móvil tendrá 1 columna y ya en escritorio (lg) se dividirá en 2*/}
     <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
         {/* Columna 1: texto */}
         <div>
-          <h2 className="font-display text-3xl font-bold md:text-4xl">
+          <h2 className="font-display text-3xl font-bold text-button-light dark:text-button-dark md:text-4xl">
             SINOPSIS
           </h2>
           <p className="mt-4 text-gray-700 dark:text-gray-300">
@@ -30,11 +31,12 @@ export default function Sinopsis() {
         <img
           src={escenaImagen}
           alt="Escena de 'TheBody'"
-          className="h-72 w-full object-cover shadow-md"
-        />
+          className="h-72 w-full object-cover" 
+        /> {/* altura de imagen fija, ancho al máximo dentro de su columna */}
       </div>
 
-      <hr className="my-8 border-gray-200 dark:border-gray-800" />
+      {/*my: margin vertical */}
+      <hr className="my-8 border-button-light dark:border-button-dark" />
 
     </section>
 

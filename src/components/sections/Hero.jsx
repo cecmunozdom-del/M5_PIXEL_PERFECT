@@ -15,17 +15,19 @@ export default function Hero(){
             //la imagen ocupará mínimo el 80% de la altura de la pantalla [80vh] -> valor arbitrario
         >   
 
-        <h1 className="font-logo text-pink-logo motion-safe:animate-flotar text-8xl md:text-10xl">
+        {/* en móvil (mobile-first) el texto será de tamaño 6xl y a partir de pantallas más grandes, de 8xl */}
+        <h1 className="font-logo text-pink-logo motion-safe:animate-flotar text-6xl md:text-8xl">
             The Body
         </h1>
 
-        <p className="mt-4 max-w-md text-gray-200">
+        {/* limite ancho del párrafo para que no se estire en pantallas grandes */}
+        <p className="m-6 max-w-md font-display text-gray-200 text-lg md:text-xl">
             Cuando una parte del cuerpo sufre, todas sufren.
         </p>
 
         <div>
             <Boton variante="primario" onClick={() => window.open("https://www.youtube.com/watch?v=wl7uj7n7DoY", "_blank")}> Tráiler oficial </Boton>
-            <Boton variante="secunadario" onClick={() => window.open("https://www.netflix.com", "_blank")}> Ver en Netflix </Boton>
+            <Boton variante="secundario" onClick={() => window.open("https://www.netflix.com", "_blank")}> Ver en Netflix </Boton>
         </div>
         </section>
     );

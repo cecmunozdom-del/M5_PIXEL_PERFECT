@@ -3,20 +3,20 @@
 import { useState } from "react";
 
 export default function Theme(){
-    const [modo, setModo] = useState(false);
+    const [modoOscuro, setModoOscuro] = useState(false);
 
     function cambiarModo(){
-        setModo(!modo);
+        setModoOscuro(!modoOscuro);
         document.documentElement.classList.toggle("dark");
     }
 
     return(
         <button 
             onClick={cambiarModo} 
-            aria-label={modo ? "Activar modo claro" : "Activar modo oscuro"}
-            className="size-11 cursor-pointer rounded-full focus-visible:ring-2"> 
+            aria-label={modoOscuro ? "Activar modo claro" : "Activar modo oscuro"}
+            className="size-11 cursor-pointer rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-gold dark:focus-visible:ring-button-dark"> 
         
-        {modo ? "☀️" : "🌙"}
+        {modoOscuro ? "☀️" : "🌙"}
         </button>
 
     );

@@ -7,3 +7,4 @@
 - me ahorró escribir código repetititvo como el array de actrices de Reparto.jsx
 -error en vite.config.js faltaban imports
 - errores con rutas de fotos ups
+- colores tb

@@ -60,46 +60,50 @@ const episodios = [
 
 export default function Episodios() {
   return (
-
+ 
     /* centrado de caja automático (margin auto), limita el ancho para que no es esitre en monitores grandes, padding horizontal y vertical */
     <section id="episodios" className="mx-auto max-w-6xl px-4 py-16">
-      <div className="mb-8 flex flex-wrap items-baseline justify-between gap-2"> {/* items baseline alinea los elementos según la línea base de texto (donde apoyan) */}
-        <h2 className="font-display text-3xl font-bold text-button-light dark:text-pink-logo md:text-4xl">
-          EPISODIOS
-        </h2>
-        <span className="font-display mb-8 text-3xl font-semibold text-accent-gold"> 
-          Temporada 1 · 8 episodios
-        </span>
-      </div>
 
-      {/* 1 columna en móvil y 2 columnas a partir de md */}
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        {episodios.map((ep) => (
-          <article
-            key={ep.numero}
-            className="flex flex-col justify-between rounded-xl border border-accent-gold/50 bg-pink-soft/30 p-5 transition-colors hover:border-accent-gold dark:border-border-dark dark:bg-card-dark"
-          >
-            <div>
-              <div className="mb-2 flex items-center justify-between gap-2">
-                <span className="font-display text-sm font-bold uppercase text-accent-gold">
-                  Episodio {ep.numero}
-                </span>
-                <span className="rounded-full border border-accent-gold/40 px-2.5 py-0.5 text-xs text-muted-light dark:text-muted-dark">
-                  {ep.duracion}
-                </span>
-              </div>
+        {/*my: margin vertical */}
+        <hr className="my-8 border-button-light dark:border-button-dark" /> 
 
-              <h3 className="text-lg font-bold text-text-light dark:text-text-dark">
-                {ep.titulo}
-              </h3>
+        <div className="mb-8 flex flex-wrap items-baseline justify-between gap-2"> {/* items baseline alinea los elementos según la línea base de texto (donde apoyan) */}
+            <h2 className="font-display text-3xl font-bold text-button-light dark:text-pink-logo md:text-4xl">
+                EPISODIOS
+            </h2>
+            <span className="font-display mb-8 text-3xl font-semibold text-accent-gold"> 
+                Temporada 1 - 8 episodios
+            </span>
+        </div>
 
-              <p className="mt-2 text-sm text-muted-light dark:text-muted-dark">
-                {ep.sinopsis}
-              </p>
-            </div>
-          </article>
-        ))}
-      </div>
+        {/* 1 columna en móvil y 2 columnas a partir de md */}
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+            {episodios.map((ep) => (
+            <article
+                key={ep.numero}
+                className="flex flex-col justify-between rounded-xl border border-accent-gold/50 bg-pink-soft/30 p-5 transition-colors hover:border-accent-gold dark:border-border-dark dark:bg-card-dark"
+            >
+                <div>
+                <div className="mb-2 flex items-center justify-between gap-2">
+                    <span className="font-display text-sm font-bold uppercase text-accent-gold">
+                        Episodio {ep.numero}
+                    </span>
+                    <span className="rounded-full border border-accent-gold/40 px-2.5 py-0.5 text-xs text-muted-light dark:text-muted-dark">
+                        {ep.duracion}
+                    </span>
+                </div>
+
+                <h3 className="text-lg font-bold text-text-light dark:text-text-dark">
+                    {ep.titulo}
+                </h3>
+
+                <p className="mt-2 text-sm text-muted-light dark:text-muted-dark">
+                    {ep.sinopsis}
+                </p>
+                </div>
+            </article>
+            ))}
+        </div>
     </section>
   );
 }

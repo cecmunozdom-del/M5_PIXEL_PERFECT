@@ -1,12 +1,18 @@
 import saraImg from "../../assets/img/sara.jpg";
 import kristinaImg from "../../assets/img/kristina.jpg";
 import geenaImg from "../../assets/img/geena.jpg";
+import sophieImg from "../../assets/img/sophia.jpg"
+import shirleyImg from "../../assets/img/shirley.jpg"
+import nnamdiImg from "../../assets/img/nnamdi.webp"
 
 
 const reparto = [
     { id: 1, nombre: "Sara Boustany",  papel: "Elise Zakaria", foto: saraImg },
     { id: 2, nombre: "Kristina Bogic", papel: "Anya Butler", foto: kristinaImg },
     { id: 3, nombre: "Geena Meszaros", papel: "Lisbeth Anderson", foto: geenaImg },
+    { id: 4, nombre: "Sophia Wylie", papel: "Grace Franklin", foto: sophieImg },
+    { id: 5, nombre: "Shirley Chen", papel: "Maddie Delaney", foto: shirleyImg },
+    { id: 6, nombre: "Nnamdi Asomugha", papel: "Father Franklin", foto: nnamdiImg },
 ]
 
 
@@ -43,10 +49,7 @@ export default function Reparto() {
           </article>
           
         ))}
-      </div>
-      
-      {/*my: margin vertical */}
-      <hr className="my-8 border-button-light dark:border-button-dark" />   
+      </div>  
 
     </section>
   );

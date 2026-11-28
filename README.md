@@ -14,10 +14,12 @@ Abre el enlace con "nmp run dev" en VSCode o en tu navegador y contempla el land
 -error en vite.config.js faltaban imports
 - errores con rutas de fotos ups
 - colores tb
+- poner el localStorage
+-info de los episodios, y ayuda con el map, similar al del reparto
 
 
 Algunos ejemplos de prompts:
-
+"Dame ejemplos de colores en hexadecimal que sean, blancos, dorados, rosas, granates, y negros."
 
 
 ## Autopsia

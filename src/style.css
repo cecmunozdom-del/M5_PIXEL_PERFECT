@@ -24,11 +24,17 @@
   --color-button-light: #92400e;       /* Dorado bronce oscuro (cumple contraste con texto blanco) */
   --color-accent-gold: #d4af37;        /* Dorado litúrgico para bordes, detalles o líneas */
   --color-pink-soft: #fce7f3;          /* Rosa pastel suave para tarjetas o detalles en claro */
+  --color-border-light: #f3e8d2;       /* Borde crema/dorado muy suave */
+  --color-text-light: #1c1917;         /* Texto principal oscuro cálido */
+  --color-muted-light: #57534e;        /* Texto secundario en claro */
 
   /* modo oscuro */
   --color-background-dark: #0d090a;    /* Negro carbón profundo de fondo */
   --color-button-dark: #881337;        /* Granate intenso para botones en oscuro */
   --color-card-dark: #1c0d11;          /* Negro rojizo muy sutil para tarjetas en oscuro */
+  --color-border-dark: #3f1822;        /* Borde granate sutil */
+  --color-text-dark: #fafaf9;          /* Texto principal claro cálido */
+  --color-muted-dark: #a8a29e;         /* Texto secundario en oscuro */
 
   /* común */
   --color-pink-logo: #f49ac1;          /* para el logo "The Body" */
@@ -38,6 +44,7 @@
   --font-logo: "kalthorne", sans-serif; /* para el logo */
   --font-display: "elektra", sans-serif;  /* para los textos */
   --font-sans: "Inter", system-ui, sans-serif; /* fuente de emergencia */
+  --text-hero: 5.5rem; /* 88 px para el título */
 
 
   /* animación flotante para la frase del "logo" */

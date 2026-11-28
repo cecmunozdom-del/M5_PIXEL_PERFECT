@@ -21,11 +21,12 @@ export default function Hero(){
         </h1>
 
         {/* limite ancho del párrafo para que no se estire en pantallas grandes */}
-        <p className="m-6 max-w-md font-display text-gray-200 text-lg md:text-xl">
+        <p className="font-display text-text-dark m-6 max-w-md text-lg md:text-xl">
             Cuando una parte del cuerpo sufre, todas sufren.
         </p>
 
-        <div>
+        {/* para que no queden pegados */}
+        <div className="flex flex-wrap justify-center gap-4">
             <Boton variante="primario" onClick={() => window.open("https://www.youtube.com/watch?v=wl7uj7n7DoY", "_blank")}> Tráiler oficial </Boton>
             <Boton variante="secundario" onClick={() => window.open("https://www.netflix.com", "_blank")}> Ver en Netflix </Boton>
         </div>

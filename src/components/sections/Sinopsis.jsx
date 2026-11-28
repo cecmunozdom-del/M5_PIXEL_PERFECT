@@ -7,7 +7,7 @@ export default function Sinopsis() {
         
     <section
         id="sinopsis"
-        className="mx-auto max-w-6xl px-4 py-16 text-gray-900 dark:text-gray-100"
+        className="mx-auto max-w-6xl px-4 py-16 text-text-light dark:text-text-dark"
     >  {/* centrado de caja automático (margin auto), limita el ancho para que no es esitre en monitores grandes, padding horizontal y vertical */}
 
     {/*my: margin vertical */}
@@ -18,10 +18,10 @@ export default function Sinopsis() {
     <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
         {/* Columna 1: texto */}
         <div>
-          <h2 className="font-display text-3xl font-bold text-button-light dark:text-button-dark md:text-4xl">
+          <h2 className="font-display text-3xl font-bold text-button-light dark:text-pink-logo md:text-4xl">
             SINOPSIS
           </h2>
-          <p className="mt-4 text-gray-700 dark:text-gray-300">
+          <p className="mt-4 text-muted-light dark:text-muted-dark">
             Tras una iniciación en un grupo de baile que sale mal, un grupo de alumnas de una escuela católica, 
             conocidas por su mal comportamiento, empiezan a tener visiones proféticas que desencadenan una histeria colectiva en su pueblo.
           </p>
@@ -31,7 +31,7 @@ export default function Sinopsis() {
         <img
           src={escenaImagen}
           alt="Escena de 'TheBody'"
-          className="h-72 w-full object-cover" 
+          className="h-72 w-full rounded-xl border border-accent-gold/50 object-cover shadow-md dark:border-border-dark"
         /> {/* altura de imagen fija, ancho al máximo dentro de su columna */}
       </div>
 

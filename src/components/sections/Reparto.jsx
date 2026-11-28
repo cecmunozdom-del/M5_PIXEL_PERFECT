@@ -15,7 +15,7 @@ export default function Reparto() {
 
     /* centrado de caja automático (margin auto), limita el ancho para que no es esitre en monitores grandes, padding horizontal y vertical */
     <section id="reparto" className="mx-auto max-w-6xl px-4 py-16">
-      <h2 className="font-display text-3xl font-bold text-button-light dark:text-button-dark md:text-4xl">
+      <h2 className="font-display mb-8 text-3xl font-bold text-button-light dark:text-pink-logo md:text-4xl">
         REPARTO
           </h2>
 
@@ -26,7 +26,8 @@ export default function Reparto() {
         {reparto.map((persona) => (
           <article
             key={persona.id}
-            className="overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800"
+            className="overflow-hidden rounded-xl border border-accent-gold/50 bg-pink-soft/30 
+            transition-transform duration-300 hover:-translate-y-1 dark:border-border-dark dark:bg-card-dark"
           > {/* overflow hidden para que la imagen de dentro se quede dentro de las esquinas redondeadas */}
 
             <img
@@ -36,8 +37,8 @@ export default function Reparto() {
             /> {/* altura de imagen fija, ancho al máximo dentro de su columna */}
 
             <div className="p-4">
-              <h3 className="font-bold">{persona.nombre}</h3>
-              <p className="font-light">{persona.papel}</p>
+              <h3 className="font-bold text-text-light dark:text-text-dark">{persona.nombre}</h3>
+              <p className="text-sm text-muted-light dark:text-muted-dark">{persona.papel}</p>
             </div>
           </article>
           

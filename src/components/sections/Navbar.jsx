@@ -4,7 +4,9 @@ import Theme from "../Theme";
 
 export default function Navbar() {
   return (
-    <nav className="bg-surface-light dark:bg-surface-dark sticky top-0 z-50 flex items-center justify-between p-4">
+    <nav className="bg-background-light dark:bg-background-dark sticky top-0 flex items-center justify-between p-4
+                    border-b border-accent-gold/90 dark:border-button-dark/90"> {/* para darle un toque de color a la parte inferior del navbar */}
+
       <a href="#inicio" className="font-logo text-pink-logo text-2xl">
         The Body
       </a>

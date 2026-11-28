@@ -4,13 +4,15 @@
 import { cn } from "../utilities/cn";
 
 export default function Boton({ children, variante = 'primario', className, ...props }) {
-  //TODO: chequea estos estilos:
-    const base = "inline-flex min-h-11 cursor-pointer items-center justify-center rounded-lg px-5 py-2.5 font-semibold transition focus-visible:ring-2";
+  
+    const base = "cursor-pointer items-center justify-center rounded-lg px-5 py-2.5 font-semibold transition focus-visible:ring-2";
   
     const variantes = {
-        primario: "bg-brand text-white hover:bg-brand-dark dark:bg-brand-light dark:text-surface-dark",
-        secundario: "border border-gray-300 bg-transparent hover:bg-gray-100 dark:border-gray-700 dark:text-gray-100 dark:hover:bg-gray-800",
-  }
+        primario:
+            "bg-pink-logo text-gray-950 hover:opacity-90 dark:bg-button-dark dark:text-white",
+        secundario:
+            "border border-netflix bg-transparent text-netflix hover:bg-netflix/10", /* TODO esto no va */
+    };
   
   
   return (

@@ -18,16 +18,21 @@
 /* diseño personalizado */
 @theme{
 
-  /* paleta de colores */
-  /*TODO MODIFICAR COLORES*/
-  --color-brand: #059669;         /* Verde esmeralda (puedes usarlo con texto blanco) */
-  --color-brand-dark: #047857;    /* Tono más oscuro para estados hover: */
-  --color-brand-light: #34d399;   /* Tono más claro pensado para destacar en modo oscuro */
-  --color-pink-logo: #F49AC1;
+  /* -- paletas de colores -- */
+  /* modo claro */
+  --color-background-light: #fffbfa;   /* Blanco marfil cálido de fondo */
+  --color-button-light: #92400e;       /* Dorado bronce oscuro (cumple contraste con texto blanco) */
+  --color-accent-gold: #d4af37;        /* Dorado litúrgico para bordes, detalles o líneas */
+  --color-pink-soft: #fce7f3;          /* Rosa pastel suave para tarjetas o detalles en claro */
 
-  --color-surface-light: #f8fafc;
-  --color-surface-dark: #0f172a;
+  /* modo oscuro */
+  --color-background-dark: #0d090a;    /* Negro carbón profundo de fondo */
+  --color-button-dark: #881337;        /* Granate intenso para botones en oscuro */
+  --color-card-dark: #1c0d11;          /* Negro rojizo muy sutil para tarjetas en oscuro */
 
+  /* común */
+  --color-pink-logo: #f49ac1;          /* para el logo "The Body" */
+  --color-netflix: #e50914;            /* color rojo Netflix */
 
   /* tipografías */
   --font-logo: "kalthorne", sans-serif; /* para el logo */

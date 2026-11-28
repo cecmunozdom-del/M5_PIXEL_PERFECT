@@ -15,7 +15,7 @@ export default function Hero(){
             //la imagen ocupará mínimo el 80% de la altura de la pantalla [80vh] -> valor arbitrario
         >   
 
-        <h1 className="font-logo text-pink-logo motion-safe:animate-flotar text-6xl md:text-8xl">
+        <h1 className="font-logo text-pink-logo motion-safe:animate-flotar text-8xl md:text-10xl">
             The Body
         </h1>
 

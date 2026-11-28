@@ -12,7 +12,7 @@ export default function Theme(){
 
     return(
         <button 
-            onClick={cambiarModo()} 
+            onClick={cambiarModo} 
             aria-label={modo ? "Activar modo claro" : "Activar modo oscuro"}
             className="size-11 cursor-pointer rounded-full focus-visible:ring-2"> 
         

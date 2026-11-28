@@ -9,12 +9,12 @@ export default function Boton({ children, variante = 'primario', className, ...p
   
     const variantes = {
         primario: "bg-brand text-white hover:bg-brand-dark dark:bg-brand-light dark:text-surface-dark",
-        secundario: "border border-gray-300 bg-transparent text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-gray-100 dark:hover:bg-gray-800",
+        secundario: "border border-gray-300 bg-transparent hover:bg-gray-100 dark:border-gray-700 dark:text-gray-100 dark:hover:bg-gray-800",
   }
   
   
   return (
-    /* cn junta estilos, elige la variante, e incluye modificaciones externas sin conflictos */
+    /* cn junta estilos, elige la variante, e incluye modificaciones externas sin conflictos */ 
     <button className={cn(base, variantes[variante], className)} {...props}>
       {children}
     </button>
